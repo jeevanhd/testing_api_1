@@ -2,27 +2,29 @@ const express = require("express");
 const router = express.Router();
 
 // Sample student data
-const students = [
-  {
-    student_id: "1",
-    name: "Alice Johnson",
-    marks: { math: 85, science: 90, english: 78, history: 88, geography: 92 },
-    total: 433,
-  },
-  {
-    student_id: "2",
-    name: "Bob Smith",
-    marks: { math: 80, science: 85, english: 75, history: 85, geography: 85 },
-    total: 410,
-  },
-  {
-    student_id: "3",
-    name: "Charlie Davis",
-    marks: { math: 60, science: 65, english: 70, history: 60, geography: 72 },
-    total: 327,
-  },
-  // Add more students as needed
-];
+// const students = [
+//   {
+//     student_id: "1",
+//     name: "Alice Johnson",
+//     marks: { math: 85, science: 90, english: 78, history: 88, geography: 92 },
+//     total: 433,
+//   },
+//   {
+//     student_id: "2",
+//     name: "Bob Smith",
+//     marks: { math: 80, science: 85, english: 75, history: 85, geography: 85 },
+//     total: 410,
+//   },
+//   {
+//     student_id: "3",
+//     name: "Charlie Davis",
+//     marks: { math: 60, science: 65, english: 70, history: 60, geography: 72 },
+//     total: 327,
+//   },
+//   // Add more students as needed
+// ];
+
+const students = require("../data.json");
 
 // POST /students/above-threshold endpoint
 router.post("/above-threshold", (req, res) => {
