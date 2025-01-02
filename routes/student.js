@@ -24,7 +24,7 @@ const router = express.Router();
 //   // Add more students as needed
 // ];
 
-const students = require("../data.json");
+const students = require("./data.json");
 
 // POST /students/above-threshold endpoint
 router.post("/above-threshold", (req, res) => {

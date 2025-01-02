@@ -35,9 +35,6 @@ const express = require("express");
 const { resolve } = require("path");
 const studentsRoute = require("./routes/student.js");
 
-const data = require("./data.json");
-console.log(data);
-
 const app = express();
 const port = 3010;
 
